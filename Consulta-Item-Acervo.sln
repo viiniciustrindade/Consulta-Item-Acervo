@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consulta-Item-Acervo", "Consulta-Item-Acervo\Consulta-Item-Acervo.csproj", "{CE993E07-ED07-41A1-AE1F-B147C331C8BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE993E07-ED07-41A1-AE1F-B147C331C8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE993E07-ED07-41A1-AE1F-B147C331C8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE993E07-ED07-41A1-AE1F-B147C331C8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE993E07-ED07-41A1-AE1F-B147C331C8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7C36302-30C5-474B-81A6-E2F7EF35D202}
+	EndGlobalSection
+EndGlobal
