@@ -12,3 +12,17 @@ C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\Consulta-Item-Acervo\Consulta-
 C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\Consulta-Item-Acervo\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.pdb
 C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\Consulta-Item-Acervo\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.SelecionarAutor.resources
 C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\Consulta-Item-Acervo\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.SelecionarSecao.resources
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\bin\Debug\Consulta-Item-Acervo.exe.config
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\bin\Debug\Consulta-Item-Acervo.exe
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\bin\Debug\Consulta-Item-Acervo.pdb
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.csproj.AssemblyReference.cache
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.csproj.SuggestedBindingRedirects.cache
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.frmConsultaItem.resources
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.Properties.Resources.resources
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.SelecionarAutor.resources
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.Form2.resources
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta_Item_Acervo.SelecionarSecao.resources
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.csproj.GenerateResource.cache
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.csproj.CoreCompileInputs.cache
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.exe
+C:\Users\vinic\OneDrive\Documentos\Projetos movtech - estagio\Projeto Biblioteca\Consulta de Item\Consulta-Item-Acervo\obj\Debug\Consulta-Item-Acervo.pdb

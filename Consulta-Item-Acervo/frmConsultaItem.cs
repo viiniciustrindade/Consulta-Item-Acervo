@@ -37,13 +37,6 @@ namespace Consulta_Item_Acervo
             txtNomeAutor.Text = autor.nomeAutor;
 
         }
-        private void CarregarUsuariosGrid()
-        {
-  
-               
-            
-        }
-
         private void frmConsultaItem_Load(object sender, EventArgs e)
         {
         }
@@ -71,45 +64,45 @@ namespace Consulta_Item_Acervo
                 sql.AppendLine("FROM mvtBibItemAcervo ITE");
                 sql.AppendLine("WHERE 1 = 1");
 
-                if (!string.IsNullOrEmpty(txtCodItem.Text))
+                if (!string.IsNullOrEmpty(txtCodItem.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.codItem LIKE '%@codItem%'");
-                    command.Parameters.Add(new SqlParameter("@codItem", txtCodItem.Text));
+                    command.Parameters.Add(new SqlParameter("@codItem", txtCodItem.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(txtNomeItem.Text))
+                if (!string.IsNullOrEmpty(txtNomeItem.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.nome LIKE '%@nome%'");
-                    command.Parameters.Add(new SqlParameter("@nome", txtNomeItem.Text));
+                    command.Parameters.Add(new SqlParameter("@nome", txtNomeItem.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(txtLocal.Text))
+                if (!string.IsNullOrEmpty(txtLocal.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.nomeLocal LIKE '%@nomeLocal%'");
-                    command.Parameters.Add(new SqlParameter("@nomeLocal", txtLocal.Text));
+                    command.Parameters.Add(new SqlParameter("@nomeLocal", txtLocal.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(txtNomeAutor.Text))
+                if (!string.IsNullOrEmpty(txtNomeAutor.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.nomeAutor LIKE '%@nomeAutor%'");
-                    command.Parameters.Add(new SqlParameter("@nomeAutor", txtNomeAutor.Text));
+                    command.Parameters.Add(new SqlParameter("@nomeAutor", txtNomeAutor.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(cbxTipoItem.Text))
+                if (!string.IsNullOrEmpty(cbxTipoItem.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.tipoItem LIKE '%@tipoItem%'");
-                    command.Parameters.Add(new SqlParameter("@tipoItem", cbxTipoItem.Text));
+                    command.Parameters.Add(new SqlParameter("@tipoItem", cbxTipoItem.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(txtColecao.Text))
+                if (!string.IsNullOrEmpty(txtColecao.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.nomeColecao LIKE '%@colecao%'");
-                    command.Parameters.Add(new SqlParameter("@colecao", txtColecao.Text));
+                    command.Parameters.Add(new SqlParameter("@colecao", txtColecao.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(txtSecao.Text))
+                if (!string.IsNullOrEmpty(txtSecao.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.secao LIKE '%@secao%'");
-                    command.Parameters.Add(new SqlParameter("@secao", txtSecao.Text));
+                    command.Parameters.Add(new SqlParameter("@secao", txtSecao.Text.Trim()));
                 }
-                if (!string.IsNullOrEmpty(cbxStatus.Text))
+                if (!string.IsNullOrEmpty(cbxStatus.Text.Trim()))
                 {
                     sql.AppendLine("AND ITE.tipoStatus LIKE '%@status%'");
-                    command.Parameters.Add(new SqlParameter("@status", cbxStatus.Text));
+                    command.Parameters.Add(new SqlParameter("@status", cbxStatus.Text.Trim()));
                 }
                 command.CommandText = sql.ToString();
 

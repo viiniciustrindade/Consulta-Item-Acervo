@@ -6,16 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Consulta_Item_Acervo
-{
-    /* public class ConsultaDAO
+namespace Consulta_Item_Acervo { }
+
+   /*  public class ConsultaDAO
      {
-         /*private SqlConnection Connection { get; }
+         private SqlConnection Connection { get; }
          public ConsultaDAO(SqlConnection connection)
          {
              Connection = connection;
-         }*/
-    /* public void Consultar(ConsultaModelcs consulta)
+         }
+    public void Consultar(ConsultaModelcs consulta)
      {
          using (SqlCommand command = Connection.CreateCommand())
          {
@@ -54,9 +54,9 @@ namespace Consulta_Item_Acervo
                  throw ex;
              }
          }
-     }*/
+     }
 
-    /* public List<ConsultaModelcs> GetConsulta(ConsultaModelcs consulta)
+    public List<ConsultaModelcs> GetConsulta(ConsultaModelcs consulta)
      {
          List<ConsultaModelcs> itens = new List<ConsultaModelcs>();
          using (SqlCommand command = Connection.CreateCommand())
@@ -73,9 +73,9 @@ namespace Consulta_Item_Acervo
                  }
              }
          }
-         return itens;
-     }*/
-    /* public List<ConsultaModelcs> GetConsulta(ConsultaModelcs consulta) 
+        return itens;
+    
+     public List<ConsultaModelcs> GetConsulta(ConsultaModelcs consulta) 
      {
          List<ConsultaModelcs> itens = new List<ConsultaModelcs>();
          using (SqlCommand command = Connection.CreateCommand())
@@ -193,6 +193,6 @@ namespace Consulta_Item_Acervo
          autorItem = autorItem,
          secaoItem = secaoItem,
          };
-     }
- }*/
-}
+   }
+ }
+}*/

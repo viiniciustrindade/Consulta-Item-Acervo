@@ -135,6 +135,8 @@
             // 
             // cbxTipoItem
             // 
+            this.cbxTipoItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxTipoItem.FormattingEnabled = true;
             this.cbxTipoItem.Items.AddRange(new object[] {
             "Livro",
@@ -151,6 +153,8 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(367, 10);
             this.label5.Name = "label5";
@@ -160,7 +164,6 @@
             // 
             // btnCarregarLocal
             // 
-            this.btnCarregarLocal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCarregarLocal.FlatAppearance.BorderSize = 0;
             this.btnCarregarLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarregarLocal.Image = global::Consulta_Item_Acervo.Properties.Resources.magnifying_glass_icon;
@@ -173,7 +176,6 @@
             // 
             // btnCarregarAutor
             // 
-            this.btnCarregarAutor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCarregarAutor.FlatAppearance.BorderSize = 0;
             this.btnCarregarAutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarregarAutor.Image = global::Consulta_Item_Acervo.Properties.Resources.magnifying_glass_icon;
@@ -186,6 +188,8 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(367, 12);
             this.label6.Name = "label6";
@@ -195,6 +199,8 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(370, 40);
             this.label7.Name = "label7";
@@ -204,6 +210,8 @@
             // 
             // txtColecao
             // 
+            this.txtColecao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtColecao.Location = new System.Drawing.Point(443, 37);
             this.txtColecao.Name = "txtColecao";
             this.txtColecao.Size = new System.Drawing.Size(340, 22);
@@ -212,6 +220,8 @@
             // 
             // txtSecao
             // 
+            this.txtSecao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSecao.Location = new System.Drawing.Point(443, 65);
             this.txtSecao.Name = "txtSecao";
             this.txtSecao.ReadOnly = true;
@@ -221,6 +231,8 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(370, 68);
             this.label8.Name = "label8";
@@ -230,6 +242,8 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(370, 96);
             this.label9.Name = "label9";
@@ -239,6 +253,8 @@
             // 
             // cbxStatus
             // 
+            this.cbxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxStatus.FormattingEnabled = true;
             this.cbxStatus.Items.AddRange(new object[] {
             "Disponivel",
@@ -362,6 +378,7 @@
             // 
             // btnConsultar
             // 
+            this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnConsultar.Location = new System.Drawing.Point(533, 123);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(122, 27);
@@ -372,6 +389,7 @@
             // 
             // btnNovaConsulta
             // 
+            this.btnNovaConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNovaConsulta.Location = new System.Drawing.Point(661, 123);
             this.btnNovaConsulta.Name = "btnNovaConsulta";
             this.btnNovaConsulta.Size = new System.Drawing.Size(122, 27);
