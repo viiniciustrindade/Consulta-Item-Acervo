@@ -126,7 +126,8 @@
             this.Controls.Add(this.txtNomeAutor);
             this.Controls.Add(this.dadosGrid4);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Selecionar local";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid4)).EndInit();
             this.ResumeLayout(false);

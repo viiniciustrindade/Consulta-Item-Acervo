@@ -37,9 +37,6 @@ namespace Consulta_Item_Acervo
             txtNomeAutor.Text = autor.nomeAutor;
 
         }
-        private void frmConsultaItem_Load(object sender, EventArgs e)
-        {
-        }
 
         private void btnCarregarLocal_Click(object sender, EventArgs e)
         {

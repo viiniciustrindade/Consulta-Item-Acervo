@@ -126,7 +126,8 @@
             this.Controls.Add(this.txtNomeAutor);
             this.Controls.Add(this.dadosGrid2);
             this.Name = "SelecionarAutor";
-            this.Text = "SelecionarAutor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Selecionar autor";
             this.Load += new System.EventHandler(this.SelecionarAutor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid2)).EndInit();
             this.ResumeLayout(false);

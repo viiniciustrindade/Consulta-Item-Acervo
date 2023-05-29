@@ -428,7 +428,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmConsultaItem";
             this.Text = "Consulta Item";
-            this.Load += new System.EventHandler(this.frmConsultaItem_Load);
+            //this.Load += new System.EventHandler(this.frmConsultaItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

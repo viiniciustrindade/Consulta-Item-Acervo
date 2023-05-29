@@ -126,7 +126,8 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.dadosGrid5);
             this.Name = "SelecionarSecao";
-            this.Text = "SelecionarSecao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Selecionar seção";
             this.Load += new System.EventHandler(this.SelecionarSecao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid5)).EndInit();
             this.ResumeLayout(false);
