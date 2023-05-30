@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutorModel.cs" />
-    <Compile Include="ConsultaDAO.cs" />
     <Compile Include="ConsultaModelcs.cs" />
     <Compile Include="DaoConnection.cs" />
     <Compile Include="frmConsultaItem.cs">

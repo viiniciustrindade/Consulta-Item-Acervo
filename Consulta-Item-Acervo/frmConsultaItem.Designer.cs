@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaItem));
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodItem = new System.Windows.Forms.TextBox();
             this.txtNomeItem = new System.Windows.Forms.TextBox();
@@ -78,7 +79,6 @@
             this.txtCodItem.Name = "txtCodItem";
             this.txtCodItem.Size = new System.Drawing.Size(56, 22);
             this.txtCodItem.TabIndex = 1;
-            this.txtCodItem.TextChanged += new System.EventHandler(this.txtCodItem_TextChanged);
             // 
             // txtNomeItem
             // 
@@ -104,7 +104,6 @@
             this.txtLocal.ReadOnly = true;
             this.txtLocal.Size = new System.Drawing.Size(240, 22);
             this.txtLocal.TabIndex = 4;
-            this.txtLocal.TextChanged += new System.EventHandler(this.txtLocal_TextChanged);
             // 
             // label3
             // 
@@ -131,12 +130,12 @@
             this.txtNomeAutor.ReadOnly = true;
             this.txtNomeAutor.Size = new System.Drawing.Size(240, 22);
             this.txtNomeAutor.TabIndex = 7;
-            this.txtNomeAutor.TextChanged += new System.EventHandler(this.txtNomeAutor_TextChanged);
             // 
             // cbxTipoItem
             // 
             this.cbxTipoItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxTipoItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoItem.FormattingEnabled = true;
             this.cbxTipoItem.Items.AddRange(new object[] {
             "Livro",
@@ -149,7 +148,6 @@
             this.cbxTipoItem.Name = "cbxTipoItem";
             this.cbxTipoItem.Size = new System.Drawing.Size(340, 24);
             this.cbxTipoItem.TabIndex = 8;
-            this.cbxTipoItem.SelectedIndexChanged += new System.EventHandler(this.cbxTipoItem_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -216,7 +214,6 @@
             this.txtColecao.Name = "txtColecao";
             this.txtColecao.Size = new System.Drawing.Size(340, 22);
             this.txtColecao.TabIndex = 13;
-            this.txtColecao.TextChanged += new System.EventHandler(this.txtColecao_TextChanged);
             // 
             // txtSecao
             // 
@@ -227,7 +224,6 @@
             this.txtSecao.ReadOnly = true;
             this.txtSecao.Size = new System.Drawing.Size(311, 22);
             this.txtSecao.TabIndex = 14;
-            this.txtSecao.TextChanged += new System.EventHandler(this.txtSecao_TextChanged);
             // 
             // label8
             // 
@@ -255,6 +251,7 @@
             // 
             this.cbxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxStatus.FormattingEnabled = true;
             this.cbxStatus.Items.AddRange(new object[] {
             "Disponivel",
@@ -264,7 +261,6 @@
             this.cbxStatus.Name = "cbxStatus";
             this.cbxStatus.Size = new System.Drawing.Size(340, 24);
             this.cbxStatus.TabIndex = 17;
-            this.cbxStatus.SelectedIndexChanged += new System.EventHandler(this.cbxStatus_SelectedIndexChanged);
             // 
             // btnCarregarSecao
             // 
@@ -307,6 +303,7 @@
             this.dadosGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dadosGrid.Size = new System.Drawing.Size(768, 280);
             this.dadosGrid.TabIndex = 21;
+            this.dadosGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dadosGrid_CellDoubleClick);
             // 
             // colCodItem
             // 
@@ -426,9 +423,9 @@
             this.Controls.Add(this.txtNomeItem);
             this.Controls.Add(this.txtCodItem);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaItem";
             this.Text = "Consulta Item";
-            //this.Load += new System.EventHandler(this.frmConsultaItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

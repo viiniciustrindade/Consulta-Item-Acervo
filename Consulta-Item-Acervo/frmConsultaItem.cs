@@ -47,67 +47,58 @@ namespace Consulta_Item_Acervo
         {
             AbrirSelecaoAutor();
         }
-        private SqlConnection Connection { get; }
-        public frmConsultaItem(SqlConnection connection)
-        {
-            Connection = connection;
-        }
+
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            using (SqlCommand command = Connection.CreateCommand())
+
+            string sql = "SELECT ITE.codItem, ITE.nome, ITE.nomeAutor, ITE.nomeEditora, ITE.tipoItem, ITE.nomeColecao, ITE.nomeLocal, ITE.secao, ITE.tipoStatus " +
+            "FROM mvtBibItemAcervo ITE " +
+            "WHERE 1 = 1";
+
+            if (!string.IsNullOrEmpty(txtCodItem.Text.Trim()))
             {
-                StringBuilder sql = new StringBuilder();
-                sql.AppendLine("SELECT ITE.codItem, ITE.nome, ITE.nomeAutor, ITE.nomeEditora, ITE.tipoItem, ITE.nomeColecao, ITE.nomeLocal, ITE.secao, ITE.tipoStatus");
-                sql.AppendLine("FROM mvtBibItemAcervo ITE");
-                sql.AppendLine("WHERE 1 = 1");
+                sql += $" AND ITE.codItem LIKE '%{txtCodItem.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(txtNomeItem.Text.Trim()))
+            {
+                sql += $" AND ITE.nome LIKE '%{txtNomeItem.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(txtLocal.Text.Trim()))
+            {
+                sql += $" AND ITE.nomeLocal LIKE '%{txtLocal.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(txtNomeAutor.Text.Trim()))
+            {
+                sql += $" AND ITE.nomeAutor LIKE '%{txtNomeAutor.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(cbxTipoItem.Text.Trim()))
+            {
+                sql += $" AND ITE.tipoItem LIKE '%{cbxTipoItem.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(txtColecao.Text.Trim()))
+            {
+                sql += $" AND ITE.nomeColecao LIKE '%{txtColecao.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(txtSecao.Text.Trim()))
+            {
+                sql += $" AND ITE.secao LIKE '%{txtSecao.Text.Trim()}%'";
+            }
+            if (!string.IsNullOrEmpty(cbxStatus.Text.Trim()))
+            {
+                sql += $" AND ITE.tipoStatus LIKE '%{cbxStatus.Text.Trim()}%'";
+            }
 
-                if (!string.IsNullOrEmpty(txtCodItem.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.codItem LIKE '%@codItem%'");
-                    command.Parameters.Add(new SqlParameter("@codItem", txtCodItem.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(txtNomeItem.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.nome LIKE '%@nome%'");
-                    command.Parameters.Add(new SqlParameter("@nome", txtNomeItem.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(txtLocal.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.nomeLocal LIKE '%@nomeLocal%'");
-                    command.Parameters.Add(new SqlParameter("@nomeLocal", txtLocal.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(txtNomeAutor.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.nomeAutor LIKE '%@nomeAutor%'");
-                    command.Parameters.Add(new SqlParameter("@nomeAutor", txtNomeAutor.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(cbxTipoItem.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.tipoItem LIKE '%@tipoItem%'");
-                    command.Parameters.Add(new SqlParameter("@tipoItem", cbxTipoItem.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(txtColecao.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.nomeColecao LIKE '%@colecao%'");
-                    command.Parameters.Add(new SqlParameter("@colecao", txtColecao.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(txtSecao.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.secao LIKE '%@secao%'");
-                    command.Parameters.Add(new SqlParameter("@secao", txtSecao.Text.Trim()));
-                }
-                if (!string.IsNullOrEmpty(cbxStatus.Text.Trim()))
-                {
-                    sql.AppendLine("AND ITE.tipoStatus LIKE '%@status%'");
-                    command.Parameters.Add(new SqlParameter("@status", cbxStatus.Text.Trim()));
-                }
-                command.CommandText = sql.ToString();
+            dadosGrid.Rows.Clear();
 
-                using (SqlDataReader reader = command.ExecuteReader())
+            using (SqlConnection connection = DaoConnection.GetConexao())
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
                 {
+                    SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        DataGridViewRow row = dadosGrid.Rows[dadosGrid.Rows.Add()];
+                        DataGridViewRow row = new DataGridViewRow();
+                        row.CreateCells(dadosGrid);
                         row.Cells[colCodItem.Index].Value = reader["codItem"].ToString();
                         row.Cells[colNomeItem.Index].Value = reader["nome"].ToString();
                         row.Cells[colColecao.Index].Value = reader["nomeColecao"].ToString();
@@ -117,17 +108,12 @@ namespace Consulta_Item_Acervo
                         row.Cells[colStatus.Index].Value = reader["tipoStatus"].ToString();
                         row.Cells[colTipoItem.Index].Value = reader["tipoItem"].ToString();
                         row.Cells[colSecao.Index].Value = reader["secao"].ToString();
+
+                        dadosGrid.Rows.Add(row);
                     }
                 }
             }
-
         }
-
-        private void txtCodItem_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtNomeItem_TextChanged(object sender, EventArgs e)
         {
             string filtro = txtNomeItem.Text.Trim();
@@ -139,40 +125,8 @@ namespace Consulta_Item_Acervo
                 row.Visible = exibir;
             }
         }
-
-        private void cbxTipoItem_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbxStatus_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtLocal_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNomeAutor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSecao_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtColecao_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNovaConsulta_Click(object sender, EventArgs e)
         {
- 
             txtCodItem.Enabled = true;
             txtNomeItem.Enabled = true;
             txtNomeItem.Enabled = true;
@@ -194,11 +148,23 @@ namespace Consulta_Item_Acervo
             btnCarregarAutor.Enabled = true;
             btnCarregarLocal.Enabled = true;
             btnCarregarSecao.Enabled = true;
-
+            dadosGrid.Rows.Clear();
         }
         private void btnCarregarSecao_Click(object sender, EventArgs e)
         {
             AbrirSelecaoSecao();
+        }
+
+        private void dadosGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodItem.Text = dadosGrid.Rows[e.RowIndex].Cells[colCodItem.Index].Value + "";
+            txtNomeItem.Text = dadosGrid.Rows[e.RowIndex].Cells[colNomeItem.Index].Value + "";
+            cbxStatus.Text = dadosGrid.Rows[e.RowIndex].Cells[colStatus.Index].Value + "";
+            txtColecao.Text = dadosGrid.Rows[e.RowIndex].Cells[colColecao.Index].Value + "";
+            cbxTipoItem.Text = dadosGrid.Rows[e.RowIndex].Cells[colTipoItem.Index].Value + "";
+            txtLocal.Text = dadosGrid.Rows[e.RowIndex].Cells[colLocal.Index].Value + "";
+            txtSecao.Text = dadosGrid.Rows[e.RowIndex].Cells[colSecao.Index].Value + "";
+            txtNomeAutor.Text = dadosGrid.Rows[e.RowIndex].Cells[colAutor.Index].Value + "";
         }
     }
 }
