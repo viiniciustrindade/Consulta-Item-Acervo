@@ -54,15 +54,13 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 53;
-            this.label1.Text = "Codigo";
+            this.label1.Text = "Código";
             // 
             // txtNomeSecao2
             // 
-            this.txtNomeSecao2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeSecao2.Location = new System.Drawing.Point(95, 38);
             this.txtNomeSecao2.Name = "txtNomeSecao2";
-            this.txtNomeSecao2.Size = new System.Drawing.Size(493, 22);
+            this.txtNomeSecao2.Size = new System.Drawing.Size(266, 22);
             this.txtNomeSecao2.TabIndex = 52;
             this.txtNomeSecao2.TextChanged += new System.EventHandler(this.txtNomeSecao2_TextChanged);
             // 
@@ -102,7 +100,7 @@
             // 
             this.colCodSecao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colCodSecao.FillWeight = 152.2843F;
-            this.colCodSecao.HeaderText = "Codigo";
+            this.colCodSecao.HeaderText = "Código";
             this.colCodSecao.MinimumWidth = 6;
             this.colCodSecao.Name = "colCodSecao";
             this.colCodSecao.ReadOnly = true;

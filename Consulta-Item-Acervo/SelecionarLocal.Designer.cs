@@ -54,15 +54,13 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Codigo";
+            this.label1.Text = "Código";
             // 
             // txtNomeLocal2
             // 
-            this.txtNomeLocal2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeLocal2.Location = new System.Drawing.Point(95, 38);
             this.txtNomeLocal2.Name = "txtNomeLocal2";
-            this.txtNomeLocal2.Size = new System.Drawing.Size(495, 22);
+            this.txtNomeLocal2.Size = new System.Drawing.Size(251, 22);
             this.txtNomeLocal2.TabIndex = 46;
             this.txtNomeLocal2.TextChanged += new System.EventHandler(this.txtNomeLocal2_TextChanged);
             // 
@@ -102,7 +100,7 @@
             // 
             this.colcodigoLocal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colcodigoLocal.FillWeight = 152.2843F;
-            this.colcodigoLocal.HeaderText = "Codigo";
+            this.colcodigoLocal.HeaderText = "Código";
             this.colcodigoLocal.MinimumWidth = 6;
             this.colcodigoLocal.Name = "colcodigoLocal";
             this.colcodigoLocal.ReadOnly = true;

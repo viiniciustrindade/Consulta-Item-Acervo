@@ -50,6 +50,8 @@
             this.cbxStatus = new System.Windows.Forms.ComboBox();
             this.btnCarregarSecao = new System.Windows.Forms.Button();
             this.dadosGrid = new System.Windows.Forms.DataGridView();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnNovaConsulta = new System.Windows.Forms.Button();
             this.colCodItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNomeItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEditora = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +61,6 @@
             this.colTipoItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSecao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.btnNovaConsulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +84,7 @@
             // 
             this.txtNomeItem.Location = new System.Drawing.Point(90, 37);
             this.txtNomeItem.Name = "txtNomeItem";
-            this.txtNomeItem.Size = new System.Drawing.Size(269, 22);
+            this.txtNomeItem.Size = new System.Drawing.Size(240, 22);
             this.txtNomeItem.TabIndex = 2;
             this.txtNomeItem.TextChanged += new System.EventHandler(this.txtNomeItem_TextChanged);
             // 
@@ -133,8 +133,6 @@
             // 
             // cbxTipoItem
             // 
-            this.cbxTipoItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxTipoItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoItem.FormattingEnabled = true;
             this.cbxTipoItem.Items.AddRange(new object[] {
@@ -146,13 +144,11 @@
             "Artigo"});
             this.cbxTipoItem.Location = new System.Drawing.Point(443, 7);
             this.cbxTipoItem.Name = "cbxTipoItem";
-            this.cbxTipoItem.Size = new System.Drawing.Size(340, 24);
+            this.cbxTipoItem.Size = new System.Drawing.Size(120, 24);
             this.cbxTipoItem.TabIndex = 8;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(367, 10);
             this.label5.Name = "label5";
@@ -186,8 +182,6 @@
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(367, 12);
             this.label6.Name = "label6";
@@ -197,8 +191,6 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(370, 40);
             this.label7.Name = "label7";
@@ -208,29 +200,23 @@
             // 
             // txtColecao
             // 
-            this.txtColecao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtColecao.Location = new System.Drawing.Point(443, 37);
             this.txtColecao.Name = "txtColecao";
-            this.txtColecao.Size = new System.Drawing.Size(340, 22);
+            this.txtColecao.Size = new System.Drawing.Size(120, 22);
             this.txtColecao.TabIndex = 13;
             // 
             // txtSecao
             // 
-            this.txtSecao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSecao.Location = new System.Drawing.Point(443, 65);
+            this.txtSecao.Location = new System.Drawing.Point(443, 95);
             this.txtSecao.Name = "txtSecao";
             this.txtSecao.ReadOnly = true;
-            this.txtSecao.Size = new System.Drawing.Size(311, 22);
+            this.txtSecao.Size = new System.Drawing.Size(237, 22);
             this.txtSecao.TabIndex = 14;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(370, 68);
+            this.label8.Location = new System.Drawing.Point(370, 98);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(47, 16);
             this.label8.TabIndex = 15;
@@ -238,10 +224,8 @@
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(370, 96);
+            this.label9.Location = new System.Drawing.Point(370, 68);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 16);
             this.label9.TabIndex = 16;
@@ -249,26 +233,22 @@
             // 
             // cbxStatus
             // 
-            this.cbxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxStatus.FormattingEnabled = true;
             this.cbxStatus.Items.AddRange(new object[] {
-            "Disponivel",
-            "Reservado",
+            "Devolvido",
             "Emprestado\t"});
-            this.cbxStatus.Location = new System.Drawing.Point(443, 93);
+            this.cbxStatus.Location = new System.Drawing.Point(443, 65);
             this.cbxStatus.Name = "cbxStatus";
-            this.cbxStatus.Size = new System.Drawing.Size(340, 24);
+            this.cbxStatus.Size = new System.Drawing.Size(120, 24);
             this.cbxStatus.TabIndex = 17;
             // 
             // btnCarregarSecao
             // 
-            this.btnCarregarSecao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCarregarSecao.FlatAppearance.BorderSize = 0;
             this.btnCarregarSecao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarregarSecao.Image = global::Consulta_Item_Acervo.Properties.Resources.magnifying_glass_icon;
-            this.btnCarregarSecao.Location = new System.Drawing.Point(760, 65);
+            this.btnCarregarSecao.Location = new System.Drawing.Point(686, 95);
             this.btnCarregarSecao.Name = "btnCarregarSecao";
             this.btnCarregarSecao.Size = new System.Drawing.Size(23, 22);
             this.btnCarregarSecao.TabIndex = 18;
@@ -301,9 +281,31 @@
             this.dadosGrid.ReadOnly = true;
             this.dadosGrid.RowHeadersWidth = 51;
             this.dadosGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dadosGrid.Size = new System.Drawing.Size(768, 280);
+            this.dadosGrid.Size = new System.Drawing.Size(694, 280);
             this.dadosGrid.TabIndex = 21;
             this.dadosGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dadosGrid_CellDoubleClick);
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConsultar.Location = new System.Drawing.Point(459, 123);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(122, 27);
+            this.btnConsultar.TabIndex = 22;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // btnNovaConsulta
+            // 
+            this.btnNovaConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovaConsulta.Location = new System.Drawing.Point(587, 123);
+            this.btnNovaConsulta.Name = "btnNovaConsulta";
+            this.btnNovaConsulta.Size = new System.Drawing.Size(122, 27);
+            this.btnNovaConsulta.TabIndex = 24;
+            this.btnNovaConsulta.Text = "Nova Consulta";
+            this.btnNovaConsulta.UseVisualStyleBackColor = true;
+            this.btnNovaConsulta.Click += new System.EventHandler(this.btnNovaConsulta_Click);
             // 
             // colCodItem
             // 
@@ -317,7 +319,7 @@
             // 
             // colNomeItem
             // 
-            this.colNomeItem.HeaderText = "Nome Item";
+            this.colNomeItem.HeaderText = "Nome item";
             this.colNomeItem.MinimumWidth = 6;
             this.colNomeItem.Name = "colNomeItem";
             this.colNomeItem.ReadOnly = true;
@@ -354,7 +356,7 @@
             // 
             // colTipoItem
             // 
-            this.colTipoItem.HeaderText = "Tipo Item";
+            this.colTipoItem.HeaderText = "Tipo item";
             this.colTipoItem.MinimumWidth = 6;
             this.colTipoItem.Name = "colTipoItem";
             this.colTipoItem.ReadOnly = true;
@@ -373,33 +375,11 @@
             this.colStatus.Name = "colStatus";
             this.colStatus.ReadOnly = true;
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConsultar.Location = new System.Drawing.Point(533, 123);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(122, 27);
-            this.btnConsultar.TabIndex = 22;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
-            // btnNovaConsulta
-            // 
-            this.btnNovaConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNovaConsulta.Location = new System.Drawing.Point(661, 123);
-            this.btnNovaConsulta.Name = "btnNovaConsulta";
-            this.btnNovaConsulta.Size = new System.Drawing.Size(122, 27);
-            this.btnNovaConsulta.TabIndex = 24;
-            this.btnNovaConsulta.Text = "Nova Consulta";
-            this.btnNovaConsulta.UseVisualStyleBackColor = true;
-            this.btnNovaConsulta.Click += new System.EventHandler(this.btnNovaConsulta_Click);
-            // 
             // frmConsultaItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(726, 450);
             this.Controls.Add(this.btnNovaConsulta);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dadosGrid);
@@ -457,6 +437,7 @@
         private System.Windows.Forms.Button btnCarregarSecao;
         private System.Windows.Forms.DataGridView dadosGrid;
         private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.Button btnNovaConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomeItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEditora;
@@ -466,7 +447,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTipoItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSecao;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
-        private System.Windows.Forms.Button btnNovaConsulta;
     }
 }
 
